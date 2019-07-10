@@ -1,0 +1,24 @@
+## Inicialmente defina el(los) nuevo(s) proceso(s) a tener en cuenta. Establezca un nombre y un identificador alfanumérico de longitud 3 (en mayúscula). No se permiten identificadores totalmente numéricos, pues entran en conflictos con los de la BD
+# Utilice la siguiente notación: ID|Nombre del proceso
+## A continuación defina el(los) nuevo(s) servicio(s) a tener en cuenta. Establezca un nombre y un identificador alfanumérico de longitud 3 (en mayúscula). No se permiten identificadores totalmente numéricos, pues entran en conflictos con los de la BD
+# Utilice la siguiente notación: ID|Nombre del servicio
+RH1|HR Service
+## Finalmente establezca cualquier cruce entre los procesos y servicio originales, y los procesos y servicios exclusivos del escenario.
+# Utilice la siguiente notación: elemento1|elemento2|valor del cruce
+# Siendo elemento1 y elemento2 una composición del tipo de elemento (S para servicio y P para proceso) + el identificador
+# Por ejemplo para caracterizar el proceso con identificador '20', el elemento sería: P20 (P porque es un proceso y 20 por su identificador)
+# Por ejemplo para caracterizar el servicio con identificador '5', el elemento sería: S5 (S porque es un servicio y 5 por su identificador)
+# Por ejemplo para definir el cruce (con un valor de 0.55) entre el proceso con identificador 5 y el servicio con identificador 20 sería: P5|S20|0.55
+# Cualquier cruce que no se defina explícitamente, se asginará automáticamente como inexistente
+P37|SRH1|0.72
+P45|SRH1|0.56
+S15|SRH1|-0.92
+S16|SRH1|0.09
+S20|SRH1|0.05
+SRH1|P37|0.76
+SRH1|P45|0.70
+SRH1|S15|-0.81
+SRH1|S16|0.13
+SRH1|S20|0.20
+
+
